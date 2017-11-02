@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+}
+
+header {
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  border-bottom: 1px solid black;
+  width: 100%;
+  position: fixed;
+}
+
+.logo {
+  color: MediumAquamarine;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.logo span {
+  padding-left: 10px;
+}
+
+nav {
+  display: inline-flex;
+  padding-right: 15px;
+}
+
+nav a {
+  color: black;
+  padding: 10px;
+}
+/* Content CSS */
+.content {
+  padding-top: 85px;
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 35px;
+  column-count: 3;
+}
+.column .large {
+   width: 630px;
+
+}
+
+.column .medium {
+  width: 300px;
+
+}
+
+.column .small {
+  width: 240px;
+
+}
+.content, .column-large, .main-story, .narrative, .stories, .story, .logo {
+  border: 1px solid black;
+}
