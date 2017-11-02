@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  width: 100%;
 }
 
 header {
@@ -37,31 +38,30 @@ nav a {
   padding: 10px;
 }
 /* Content CSS */
+
 .content {
+  display: flex;
   padding-top: 85px;
-  display: flex;
 }
-
-.column {
-  display: flex;
-  flex-direction: column;
-  margin-right: 35px;
-  column-count: 3;
-}
-.column .large {
-   width: 630px;
-
-}
-
-.column .medium {
-  width: 300px;
-
-}
-
-.column .small {
-  width: 240px;
-
-}
-.content, .column-large, .main-story, .narrative, .stories, .story, .logo {
+.column.large {
+  width: 630px;
   border: 1px solid black;
+}
+
+.column.medium {
+  width: 300px;
+  border: 1px solid red;
+}
+
+.column.small {
+  width: 240px;
+  border: 1px solid green;
+}
+
+.story {
+  border: 1px solid purple;
+}
+
+.main-story, .no-article {
+  border: 1px solid brown;
 }
