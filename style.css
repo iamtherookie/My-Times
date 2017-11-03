@@ -80,26 +80,19 @@ div {
   background-image: url("resources/images/main-story.png");
   display: flex;
   font-size: 40px;
-  height: 300px;
 }
 
 .fall-article.image-content {
   background-image: url("resources/images/fall-season.png");
-  height: 300px;
-  text-align: center;
   padding: 10px;
 }
 
 .cat-ceo.image-content {
   background-image: url("resources/images/cat-ceo.png");
-  height: 300px;
-  text-align: center;
 }
 
 .cameraman.image-content {
   background-image: url("resources/images/hipster.png");
-  height: 300px;
-  text-align: center;
   padding: 10px;
 
 }
@@ -110,6 +103,9 @@ div {
   font-size: 30px;
   color: white;
   display: flex;
+  text-align: center;
+  align-items: center;
+  height: 280px;
 }
 
 .story {
@@ -129,10 +125,12 @@ div {
   padding: 10px;
 }
 
-.bites h3 {
+.news-bites h3 {
   font-size: 16px;
   font-weight: bold;
   text-align: center;
+  align-items: center;
+  padding-bottom: 15px;
 }
 
 .news-bites .bites {
@@ -141,6 +139,7 @@ div {
   font-family: Verdana;
   font-size: 12px;
   color: DimGray;
+  padding: 18px;
   border-bottom: 1px solid black;
 }
 
