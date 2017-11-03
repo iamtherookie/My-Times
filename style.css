@@ -1,7 +1,12 @@
 body {
   margin: 0;
   width: 100%;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
 }
+
+/* "Header CSS" */
 
 header {
   font-family: Verdana;
@@ -13,6 +18,8 @@ header {
   border-bottom: 1px solid black;
   width: 100%;
   position: fixed;
+  z-index: 1;
+  background-color: white;
 }
 
 .logo {
@@ -37,31 +44,97 @@ nav a {
   color: black;
   padding: 10px;
 }
+
 /* Content CSS */
 
+div {
+  display: block;
+}
 .content {
   display: flex;
   padding-top: 85px;
 }
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+
 .column.large {
   width: 630px;
-  border: 1px solid black;
+  margin-left: 10px;
 }
 
 .column.medium {
   width: 300px;
-  border: 1px solid red;
 }
 
 .column.small {
   width: 240px;
-  border: 1px solid green;
+}
+
+.lead-story .image-content {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
+  display: flex;
+  font-size: 40px;
+  height: 300px;
+}
+
+.fall-article.image-content {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
+  height: 300px;
+  text-align: center;
+  padding: 10px;
+}
+
+.cat-ceo.image-content {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
+  height: 300px;
+}
+
+.cameraman.image-content {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
+  height: 300px;
+  text-align: center;
+  padding: 10px;
+}
+
+.image-content {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  display: flex;
 }
 
 .story {
-  border: 1px solid purple;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
 }
 
-.main-story, .no-article {
-  border: 1px solid brown;
+.stories {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.story .text-content {
+  padding: 10px;
+}
+
+.bites h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.news-bites .bites {
+  display: block;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  border-bottom: 1px solid black;
 }
